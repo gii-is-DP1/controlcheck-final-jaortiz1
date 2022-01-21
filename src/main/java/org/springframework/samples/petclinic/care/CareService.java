@@ -24,7 +24,7 @@ public class CareService {
 	}
 
 	public Care getCare(String careName) {
-		return null;
+		return this.careRepository.findCareByName(careName);
 	}
 
 	public CareProvision save(CareProvision p) throws NonCompatibleCaresException, UnfeasibleCareException {
